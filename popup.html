@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT chrome extension</title>
+</head>
+<style>
+    body {
+        background-color: grey; 
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        font-size: 25px;
+        border: 4px solid black;
+        margin: auto;
+    }
+    #sname {
+        font-size: 30px;
+        border: 4px solid black;
+        margin: auto;
+    }
+    img{
+        width:80px;
+        /* border: 2px solid blue; */
+        margin: auto;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="conatiner">
+        <form action="" name="form1">
+            <img src="youtube-color.png">
+            <input type="text" id="sname" name="sname" placeholder="Search">
+            <button id="btn" type="submit" value="Go" formtarget="_blank">🚀 </button>
+        </form>
+    </div>
+    
+    <!-- <script>
+        document.getElementById("btn").onclick = function() {myFunction()};
+
+        function myFunction() {
+            var x = document.form1.sname.value;
+            var y = x.split(' ').join('+');
+            window.open("https://www.youtube.com/results?search_query="+y);
+        }
+    </script> -->
+    <script src="popup.js"></script>
+</body>
+</html>
